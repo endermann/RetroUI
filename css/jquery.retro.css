@@ -2,6 +2,8 @@
     background-color: black;
     color: white;
     overflow-y: scroll;
+    font-family: Courier;
+    font-size: 15px;
 }
 
 .retroConsoleContainer input {
@@ -9,4 +11,19 @@
     border: none;
     color: white;
     outline: none;
+    font-family: Courier;
+    font-size: 15px;
+}
+
+.retroWindowsContainer {
+    background-color: white;
+    color: black;
+    font-family: Arial;
+    font-size: 15px;
+    border: 3px solid grey;
+}
+
+.retroWindowsIconSelected {
+    background-color: #000080;
+    color: white;
 }

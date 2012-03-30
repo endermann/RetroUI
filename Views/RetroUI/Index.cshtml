@@ -8,25 +8,16 @@
     <head>
         <script type="text/javascript">
             function setupConsole() {
-                $(".consoleContainer").retroConsole({ contentContainerId: 'retroConsoleContent', inputId: 'retroConsoleInput' });
-                $(".consoleContainer").retroConsole('mkdir', 'foo');
-                $(".consoleContainer").retroConsole('addExecutable', 'foo', 'dosomething.bat', function () { alert('didsomething!') });
+                $(".consoleContainer").retroConsole();
+                $(".consoleContainer").retroConsole('mkdir', 'foo/blah/fish/qux');
+                $(".consoleContainer").retroConsole('mkdir', 'zee');
+                $(".consoleContainer").retroConsole('mkdir', 'blu');
+                $(".consoleContainer").retroConsole('addExecutable', 'foo', 'dosomething.bat', '03/22/2011','01:24:06', function () { alert('didsomething!') });
+                $(".consoleContainer").retroConsole('addExecutable', 'foo/blah/fish', 'doit.bat', '03/22/2011','01:24:06', function () { alert('didit!') });
             }
-
-            
-//            function handleCommand(command) {
-//                if (command == 'dir') {
-//                    alert($(this));
-//                    $(this).addContent("blah<br/>blah<br/>blah<br/>blah<br/>blah<br/>blah<br/>blah<br/>blah<br/>blah<br/>blah<br/>blah<br/>blah<br/>blah<br/>blah<br/>");
-//                }
-//                else if (command == 'cls') {
-//                    $("#retroConsoleContent").html("");
-//                }
-//                $(".consoleContainer").scrollTop($(".consoleContainer").prop("scrollHeight"));
-//            }
         </script>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-        <script src="/js/jquery.retro.js" type="text/javascript"></script>
+        <script src="/js/jquery.retroui.dos.js" type="text/javascript"></script>
         <link href="/css/jquery.retro.css" rel="stylesheet" type="text/css" />
         <script type="text/javascript">
             $(document).ready(function () {

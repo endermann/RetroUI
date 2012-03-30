@@ -13,5 +13,9 @@ namespace RetroUI.Controllers
             return View();
         }
 
+        public ActionResult Windows()
+        {
+            return View();
+        }
     }
 }

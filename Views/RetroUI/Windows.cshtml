@@ -1,0 +1,35 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <script type="text/javascript">
+            function setupRetroWindows() {
+                $(".windowsContainer").retroWindows();
+                $(".windowsContainer").retroWindows('createProgramGroup', '.Net');
+                $(".windowsContainer").retroWindows('createProgramGroup', 'Amazon Web Services');
+                $(".windowsContainer").retroWindows('addProgram', '.Net', '.Net Reflector by Example', function () { alert('reflector!'); });
+                $(".windowsContainer").retroWindows('addProgram', '.Net', 'CLR Fundamentals', function () { alert('CLR!'); });
+                $(".windowsContainer").retroWindows('addProgram', 'Amazon Web Services', 'AWS Developer Fundamentals', function () { alert('AWS!'); });
+            }
+        </script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+        <script src="/js/jquery.retroui.win.js" type="text/javascript"></script>
+        <link href="/css/jquery.retro.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript">
+            $(document).ready(function () {
+                setupRetroWindows();
+            });
+        </script>
+        <title>title</title>
+    </head>
+    <body>
+        <div style="padding:20px; width:100%; height:100%;">
+            <div class="windowsContainer" id="foo" style="width:800px; height:800px;">
+            </div>
+        </div>
+    </body>
+</html>
