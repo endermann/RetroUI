@@ -1,0 +1,12 @@
+﻿.retroConsoleContainer {
+    background-color: black;
+    color: white;
+    overflow-y: scroll;
+}
+
+.retroConsoleContainer input {
+    background-color: black;
+    border: none;
+    color: white;
+    outline: none;
+}

@@ -1,0 +1,16 @@
+﻿.retroConsoleContainer {
+    background-color: black;
+    color: white;
+    overflow-y: scroll;
+    font-family: Courier;
+    font-size: 15px;
+}
+
+.retroConsoleContainer input {
+    background-color: black;
+    border: none;
+    color: white;
+    outline: none;
+    font-family: Courier;
+    font-size: 15px;
+}
